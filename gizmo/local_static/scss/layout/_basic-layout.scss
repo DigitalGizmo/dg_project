@@ -1,6 +1,7 @@
 // Basic Layout
 body {
 	background: $blue url("../images/gizmo-bkgnd.jpg") repeat;
+  min-height: 100vh;
 }
 
 #wrapper {
@@ -107,12 +108,14 @@ img.mobile-logo {
 		// if screen is less than 900px, text is smaller
 	  @include media(max-width $large-screen) {
 	 		font-size: $med-large-font-size * .75;
+	 		height: 2.25em;
 			margin-bottom: $small-spacing;
 		}
 
 		// if screen is greater than or equal to 600px, text is larger
 		@include media($large-screen) {
  			font-size: $med-large-font-size;
+ 			height: 2.5em;
 			margin-bottom: $tiny-spacing;
 		}
 	}
