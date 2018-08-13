@@ -333,8 +333,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 0.9em;
   font-weight: 300;
-  line-height: 1.6;
-  height: 100vh; }
+  line-height: 1.6; }
 
 h1,
 h2,
@@ -407,7 +406,8 @@ ul.services-list {
   margin-left: 0.8em; }
 
 body {
-  background: #283C66 url("../images/gizmo-bkgnd.jpg") repeat; }
+  background: #283C66 url("../images/gizmo-bkgnd.jpg") repeat;
+  min-height: 100vh; }
 
 #wrapper {
   max-width: 1200px;
@@ -543,10 +543,12 @@ img.mobile-logo {
 @media screen and (max-width: 1050px) {
   .projects-grid-item h3 {
     font-size: 1.5em;
+    height: 2.75em;
     margin-bottom: 0.8em; } }
 @media screen and (min-width: 1050px) {
   .projects-grid-item h3 {
     font-size: 2em;
+    height: 2.5em;
     margin-bottom: 0.4em; } }
 
 img.pause-button {
