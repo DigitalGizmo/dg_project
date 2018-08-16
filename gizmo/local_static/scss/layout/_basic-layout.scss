@@ -107,7 +107,7 @@ img.mobile-logo {
 	h3 {
 		// if screen is less than 900px, text is smaller
 	  @include media(max-width $large-screen) {
-	 		font-size: $med-large-font-size * .75;
+	 		font-size: $med-large-font-size * .625;
 	 		height: 2.75em;
 			margin-bottom: $small-spacing;
 		}
