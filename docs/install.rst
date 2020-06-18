@@ -21,9 +21,9 @@ first switch to new virt env
 Install django, psycopg2, unipath
 ::
 	workon gizmo
-	pip install django
-	pip install psycopg2
+	pip install Django==1.11.29
 	pip install unipath
+
 
 Start app
 --------------
@@ -59,6 +59,15 @@ Logged in as root
 ::
 	mkvirtualenv -a  /var/www/gizmo_user/data/www/digitalgizmo.com.vm-host.net/gizmo --python=/usr/local/bin/python3.4 gizmo
 	mkvirtualenv -a  /var/www/gizmo_user/data/www/digitalgizmo.com/gizmo --python=/usr/local/bin/python3.4 gizmoz
+
+
+Update to config -- copied from server June 2020
+Note gizmoz
+::
+	Alias /static/ /var/www/gizmo_user/data/www/gizmo_static/
+	WSGIDaemonProcess production python-path=/var/www/gizmo_user/data/www/digitalgizmo.com/gizmo:/var/www/gizmo_user/data/.envs/gizmoz/lib/python3.4/site-packages
+	WSGIProcessGroup production
+	WSGIScriptAlias / /var/www/gizmo_user/data/www/digitalgizmo.com/gizmo/config/wsgi.py
 
 
 Config Apache

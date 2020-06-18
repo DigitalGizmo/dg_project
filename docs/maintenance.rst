@@ -1,6 +1,13 @@
 Maintenance
 ============
 
+Virtual envs
+-----------
+local: workon gizmo
+
+eApps: workon no longer not set up, but app uses .envs/gizmoz
+
+
 Git updates
 -----------
 
