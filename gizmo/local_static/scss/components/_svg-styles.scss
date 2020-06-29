@@ -1,13 +1,13 @@
 // Styles for svg
 
 .svg-text {
-	fill: $blue; 
-	stroke: $blue-white;
+	stroke: $blue; 
+	fill: $blue-white;
 	stroke-miterlimit:10;
 }
 
 .stroke-5, .stroke1, .stroke2, .stroke3 {
-	stroke: $blue-white;
+	stroke: $blue;
 }
 
 .stroke-5 {
@@ -35,11 +35,11 @@
 }
 
 .fill {
-	fill: $blue;	
+	fill: $blue-white;	
 }
 
 .tone-fill {
-	fill: darken($blue, 3%);
+	fill: darken($blue-white, 3%);
 }
 
 .light-fill {

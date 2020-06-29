@@ -1,7 +1,7 @@
 // Basic Layout
 body {
-	background: $blue url("../images/gizmo-bkgnd.jpg") repeat;
-  min-height: 100vh;
+	background: $base-background-color url("../images/gizmo-bkgnd.jpg") repeat;
+	min-height: 100vh;
 }
 
 #wrapper {
@@ -25,9 +25,9 @@ footer, header nav {
 }
 
 footer, header nav {
-	ul li {
+	ul li, ul li.last {
 		display: inline;
-		padding-right: $base-spacing;
+		padding-right: $large-spacing;
 		border-right: $base-border;
 	}
 	
@@ -36,7 +36,6 @@ footer, header nav {
 	}
 
 	a {
-		margin-right: $small-spacing;
 	}
 }
 
