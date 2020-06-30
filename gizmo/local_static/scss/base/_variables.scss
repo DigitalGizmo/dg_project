@@ -27,9 +27,10 @@ $large-screen: 1050px;
 
 // Colors
 $blue: #283C66;
-$white: #F0F0E1;
+$white: #FAFCFE;
 $dark-white: #bfc0d0;
-$blue-white: #d3dbe8;
+$blue-white: #F2F6FA;
+$medium-blue: #98A1BC;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
@@ -46,8 +47,8 @@ $base-border-color: $blue;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
-$base-background-color: $blue-white;
-$slim-background-color: $white;
+$base-background-color: $white;
+$slim-background-color: $blue-white;
 
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);

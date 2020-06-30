@@ -15,7 +15,7 @@ $(document).ready(function(){
 		$products = $('.product');
 
 	// set ratios
-	var turbineCycle = 3; // 3
+	var turbineCycle = .2; // 3
 	var turbineWheelRatio = 5; 
 	// pulley wheel turns once when the turnbine turns five times
 	var wheelCycle = turbineCycle * turbineWheelRatio;

@@ -28,6 +28,14 @@
 
 .stroke6 {
 	stroke-width: 6px;
+	stroke: $medium-blue;
+	fill: none;
+}
+
+.stroke7 {
+	stroke-width: 2px;
+	stroke: $medium-blue;
+	fill: none;
 }
 
 .no-fill {
@@ -35,19 +43,20 @@
 }
 
 .fill {
-	fill: $blue-white;	
+	fill: $white;	
 }
 
 .tone-fill {
-	fill: darken($blue-white, 3%);
-}
-
-.light-fill {
 	fill: $blue-white;
 }
 
+.light-fill {
+	fill: $white;
+}
+
 .medium-fill {
-	fill: darken($blue-white, 50%);
+	//fill: darken($blue-white, 20%);
+	fill: $medium-blue;
 }
 
 .miterlimit {
