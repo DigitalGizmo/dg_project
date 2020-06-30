@@ -15,32 +15,32 @@ $(document).ready(function(){
 		$products = $('.product');
 
 	// set ratios
-	var turbineCycle = .2; // 3
+	var turbineCycle = 3; // 3
 	var turbineWheelRatio = 5; 
 	// pulley wheel turns once when the turnbine turns five times
 	var wheelCycle = turbineCycle * turbineWheelRatio;
-	console.log(" -- wheelCycle: " + wheelCycle);
+	// console.log(" -- wheelCycle: " + wheelCycle);
 	var wheelWormRatio = .25; 
 	// the worm shaft turns 6 teeth to 24 = 1/4
 	var wormCycle = wheelCycle * wheelWormRatio;
-	console.log(" -- wormCycle: " + wormCycle);
+	// console.log(" -- wormCycle: " + wormCycle);
 	// if wheel cyle is 15 secs, the worm 360 is 3.75
 	// one sixth of that shoud be pinion tooth cycle
 	// and the delay should be one third of that (since three positions)
 	var pinionDelayFudgeFactor = .0083334;
 	// var pinionDelay = wormCycle/18 - pinionDelayFudgeFactor; // .15  - pinionDelayFudgeFactor
 	var pinionDelay = wormCycle/18; // .15  - pinionDelayFudgeFactor
-	console.log(" -- pinionDelay: " + pinionDelay);
+	// console.log(" -- pinionDelay: " + pinionDelay);
 	// durration can't be longer than delay -- looks messey if it is
 	var pinionDuration =  0; // 0 pinionDelay/2; //.1
 	var wormCogRatio = 24;
 	// worm has to turn 24 times for one cog turn
 	var cogCycle = wormCycle * wormCogRatio;
-	console.log(" -- cogCycle: " + cogCycle);
+	// console.log(" -- cogCycle: " + cogCycle);
 	// lever jumps 12 times per one cog rotation
 	var leverCycle = cogCycle/12;
 	// var leverCycle = 7.5;
-	console.log(" -- leverCycle: " + leverCycle);
+	// console.log(" -- leverCycle: " + leverCycle);
 	// leverCylcle includes downTime and upTime
 	var leverUpTime = .3;
 	var leverDownTime = leverCycle - leverUpTime;
@@ -158,7 +158,7 @@ $(document).ready(function(){
 	function startProduct() {
 		// pick random number
 		var prodNum = Math.floor((Math.random() * 6)); //  + 1
-		console.log(" -- prodNum: " + prodNum);
+		// console.log(" -- prodNum: " + prodNum);
 		TweenLite.set($products[prodNum], {autoAlpha: 1});
 		TweenMax.to($products[prodNum], 7, {x: "2000px", ease:Linear.easeNone} );
 	}
