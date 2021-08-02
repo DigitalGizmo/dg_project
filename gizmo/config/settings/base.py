@@ -146,3 +146,5 @@ STATICFILES_DIRS = (
     BASE_DIR.child("local_static"),
 )
 
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
